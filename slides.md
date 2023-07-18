@@ -1,22 +1,25 @@
 ---
-author: richardcase
-date: 2023-07-16
+author: ''
+date: ''
 paging: Page %d of %d
 ---
+
 # What is Cluster API?
 
 * It's a **kubernetes-sigs** project
 * Built on the premise that **"Cluster lifecycle management is difficult"**
-* Especially cross cloud/target infra with a **consistent operational model**
+* **Consistent operational model** across different target infra
+* Uses **Kubernetes-style APIs & patterns** to **automate cluster lifecycle management**
 
 ---
+
 # What is Cluster API?
 
-* Uses **Kubernetes-style APIs & patterns** to **automate cluster lifecycle management**
-* Supporting infrastructure is created (i.e. VMs, network, load balancers)
-    * Opinionated out of the box
-* Bootstrapping and configuration of a Kubernetes cluster on the infrastructure
-* **All declaratively!**
+1. Provisions infrastructure
+2. Bootstraps Kubernetes on infra
+3. Manages lifecycle
+ 
+### **All declaratively!**
 
 ---
 
@@ -24,33 +27,9 @@ paging: Page %d of %d
 
 ### Extensibility is core to Cluster API.....
 
-### ..... designed around interchangeable components called **providers**
+### ..... interchangeable components called **providers**
 
----
-
-# What is Cluster API?
-
-* Project has really matured on provisioning
-* Starting to build higher order functions
-    * Classes of clusters - cookie cutter / super templates
-    * Hooks to plugin into wider provisioning landscape
-    * Day 2 operations 
-
----
-
-# Adoption
-
-* Companies managing a large number of clusters:
-    * Twilio
-    * Giant Swarm
-    * New Relic
-    * DT
-* Software & service vendors:
-    * VMWare - Tanzu
-    * SUSE - Rancher
-    * Redhat - Openshift
-    * AWS - EKS Anywhere
-    * Spectrocloud
+#### 5 Different provider types (infra, bootstrap, controlplane, ipam, addon)
 
 ---
 
