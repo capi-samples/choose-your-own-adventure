@@ -11,6 +11,8 @@ paging: Page %d of %d
 * **Consistent operational model** across different target infra
 * Uses **Kubernetes-style APIs & patterns** to **automate cluster lifecycle management**
 
+> slides & demo: https://github.com/capi-samples/choose-your-own-adventure
+
 ---
 
 # What is Cluster API?
