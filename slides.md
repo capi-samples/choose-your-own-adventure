@@ -13,6 +13,7 @@ paging: Page %d of %d
 # What is Cluster API?
 
 * Uses **Kubernetes-style APIs & patterns** to **automate cluster lifecycle management**
+    * Logical resource kinds (i.e. Cluster, MachineDeployment, Machine....)
 * Supporting infrastructure is created (i.e. VMs, network, load balancers)
     * Opinionated out of the box
 * Bootstrapping and configuration of a Kubernetes cluster on the infrastructure
@@ -25,6 +26,10 @@ paging: Page %d of %d
 ### Extensibility is core to Cluster API.....
 
 ### ..... designed around interchangeable components called **providers**
+
+#### Different provider types (infra, bootstrap, controlplane, ipam, addon)
+
+#### Provider specific resource kinds (e.g. AWSCluster, TinkerbellMachine)
 
 ---
 

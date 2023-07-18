@@ -4,6 +4,29 @@ This repo contains the slides and demo for the **Provision a Production Cluster*
 
 In this repo we have:
 
-- [Slides](slides.md)
+- Slides
 - Demo script
+
+## Present Slides
+
+- Install [slides](https://github.com/maaslalani/slides)
+- From a terminal run:
+
+```bash
+slides slides.ms
+```
+
+
+## Run Demo
+
+- Install [pv](https://www.ivarch.com/programs/pv.shtml)
+- Install kind
+- Install kubectl
+- Install clusterctl
+- From a terminal run:
+
+```bash
+./demo.sh
+```
+
 

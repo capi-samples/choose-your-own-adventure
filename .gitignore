@@ -1,0 +1,4 @@
+test.kubeconfig
+cluster.yaml
+capi-quickstart.yaml
+.tags
