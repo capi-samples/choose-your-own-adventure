@@ -13,7 +13,7 @@ In this repo we have:
 - From a terminal run:
 
 ```bash
-slides slides.ms
+slides slides.md
 ```
 
 

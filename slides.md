@@ -68,6 +68,7 @@ paging: Page %d of %d
     * Smaller cloud / iaas providers (i.e. Hertzner)
     * Baremetal (i.e. Metal3, Tinkerbell)
     * Baremetal-as-a-service (i.e. Equinix)
+* Lots more functionality like cluster classes, runtime hooks not covered
 
 ---
  # One last thought
