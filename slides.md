@@ -5,9 +5,9 @@ paging: Page %d of %d
 ---
 # What is Cluster API?
 
-* Its a **kubernetes-sigs** project
+* It's a **kubernetes-sigs** project
 * Built on the premise that **"Cluster lifecycle management is difficult"**
-* Especialy cross cloud/target infra with a **consistent operational model**
+* Especially cross cloud/target infra with a **consistent operational model**
 
 ---
 # What is Cluster API?
@@ -33,7 +33,7 @@ paging: Page %d of %d
 * Project has really matured on provisioning
 * Starting to build higher order functions
     * Classes of clusters - cookie cutter / super templates
-    * Hooks to plugin into wider provisioing landscape
+    * Hooks to plugin into wider provisioning landscape
     * Day 2 operations 
 
 ---
@@ -85,7 +85,7 @@ paging: Page %d of %d
 * A large number of providers. Strong in:
     * Hyperscalers (i.e. AWS, Azure, GCP)
     * Smaller cloud / iaas providers (i.e. Hertzner)
-    * Baremetal (i.e. Metak3, Tinkerbell)
+    * Baremetal (i.e. Metal3, Tinkerbell)
     * Baremetal-as-a-service (i.e. Equinix)
 
 ---
