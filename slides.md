@@ -9,21 +9,21 @@ paging: Page %d of %d
 Need to add points here
 
 ```
-                                                         ┌────────────────┐        
-                                                         │                │        
-                                                         │    Workload    │        
-                                                ┌───────▶│   Cluster 1    │        
-                                                │        │                │        
-                      ┌────────────────┐        │        │                │        
-     ┌─────┐          │                │        │        └────────────────┘        
-     │     │          │      CAPI      │   Provision                     AWS       
-     │yaml │───Apply──▶   Management   │───────&┤     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  
-     │     │          │    Cluster     │    Manages                      Baremetal 
-     └─────┘          │                │        │        ┌────────────────┐        
-                      └────────────────┘        │        │                │        
-                                                │        │    Workload    │        
-                                                └───────▶│   Cluster N    │        
-                                                         │                │        
-                                                         │                │        
-                                                         └────────────────┘        
+                                                    ┌────────────────┐
+                                                    │                │
+                 ┌────────────────┐                 │    Workload    │
+                 │      CAPI      │        ┌───────▶│   Cluster 1    │
+                 │   Management   │        │        │                │
+                 │    Cluster     │        │        │                │
+┌─────┐          │                │        │        └────────────────┘
+│     │          │  ┌───┐  ┌───┐  │   Provision                     AWS
+│yaml │───Apply──▶  │ P │  │ P │  │───────&┤     ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+│     │          │  └───┘  └───┘  │    Manages                      Baremetal
+└─────┘          │  ┌───┐  ┌───┐  │        │        ┌────────────────┐
+                 │  │ P │  │ C │  │        │        │                │
+                 │  └───┘  └───┘  │        │        │    Workload    │
+                 │                │        └───────▶│   Cluster N    │
+                 └────────────────┘                 │                │
+                  c = core controllers              │                │
+                  p = provider                      └────────────────┘
 ```
