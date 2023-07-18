@@ -2,8 +2,6 @@
 
 . demo/demo-magic.sh
 
-TYPE_SPEED=25
-
 clear
 
 pe "kind create cluster --config demo/kind-cluster-with-extramounts.yaml"
