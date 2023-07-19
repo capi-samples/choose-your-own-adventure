@@ -7,7 +7,7 @@ paging: Page %d of %d
 # What is Cluster API?
 
 * It's a **kubernetes-sigs** project
-* Built on the premise that **"Cluster lifecycle management is difficult"**
+* Started based on the observation that **"Cluster lifecycle management is difficult"**
 * **Consistent operational model** across different target infra
 * Uses **Kubernetes-style APIs & patterns** to **automate cluster lifecycle management**
 
@@ -18,8 +18,9 @@ paging: Page %d of %d
 # What is Cluster API?
 
 1. Provisions infrastructure
-2. Bootstraps Kubernetes on infra
-3. Manages lifecycle
+2. Bootstraps Kubernetes on the infra (Kubeadm, RKE2, K3s)
+3. Manages lifecycle of infra & k8s (version upgrades, scaling)
+4. Lots more functionality like cluster classes, runtime hooks, addons, ...
  
 ### **All declaratively!**
 
@@ -60,15 +61,18 @@ paging: Page %d of %d
 
 # To help make decision
 
-* You need a management cluster (unless clusters are self managed)
+* You need a management cluster (unless using "self managed" pattern)
 * Opinionated infrastructure setup
     * If you don't like the opinions...BYOI
-* A large number of providers. Strong in:
-    * Hyperscalers (i.e. AWS, Azure, GCP)
-    * Smaller cloud / iaas providers (i.e. Hertzner)
-    * Baremetal (i.e. Metal3, Tinkerbell)
-    * Baremetal-as-a-service (i.e. Equinix)
-* Lots more functionality like cluster classes, runtime hooks not covered
+* Strong community around CAPI and its providers
+* Used by lots of companies & in products/services:
+    * Mercedes-Benz
+    * New Relic
+    * DT
+    * AWS - EKS Anywhere
+    * SUSE - Rancher
+    * VMWare - Tanzu
+    * .....lots more
 
 ---
  # One last thought
